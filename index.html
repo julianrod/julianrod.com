@@ -1,238 +1,695 @@
-﻿<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Digital strategy specialist, product and service design. With experience in government digital strategy.">
-    <meta name="author" content="Julián Rodriguez Orihuela">
-    <meta name="keywords" content="design, digital products, digital government, digital strategy">
-    <meta property="og:image" content="foto.jpg">
-	<meta name="twitter:image" content="foto.jpg">
-	<meta property="og:type" content="profile">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Julián Rodríguez Orihuela | Digital transformation for government and public services</title>
+<meta name="description" content="Julián Rodríguez Orihuela helps governments, public institutions and international organisations redesign their digital services and the operating models behind them.">
+<meta property="og:title" content="Julián Rodríguez Orihuela">
+<meta property="og:description" content="Digital transformation for governments and public institutions.">
+<meta property="og:image" content="https://julianrod.com/img/julian.jpg">
+<meta property="og:url" content="https://julianrod.com/">
+<link rel="alternate" hreflang="en" href="https://julianrod.com/">
+<link rel="alternate" hreflang="es" href="https://julianrod.com/?lang=es">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,600;0,800;1,400&display=swap" rel="stylesheet">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="julian.css">
+<script data-host="https://microanalytics.io" data-dnt="false" src="https://microanalytics.io/js/script.js" id="ZwSg9rf6GA" async defer></script>
 
-    <title>Julián Rodriguez Orihuela - CV</title>
+<style>
+:root {
+  --ink: #000000;
+  --muted: #474747;
+  --accent: #0047bb;
+  --accent-wash: #eaf0fb;
+  --line: #cfcfcf;
+  --paper: #ffffff;
+  --measure: 42rem;
+  --wide: 70rem;
+}
 
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Droid+Serif">
-    <link rel="shortcut icon" href="favicon.png">
-    <script data-host="https://microanalytics.io" data-dnt="false" src="https://microanalytics.io/js/script.js" id="ZwSg9rf6GA" async defer></script>
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition: none !important; }
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Public Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-size: 1.1875rem;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: var(--accent); text-underline-offset: 0.18em; text-decoration-thickness: 1px; }
+a:hover { text-decoration-thickness: 2px; }
+
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+
+.skip {
+  position: absolute; left: 1rem; top: -4rem;
+  background: var(--ink); color: var(--paper); padding: 0.5rem 1rem; z-index: 10;
+}
+.skip:focus { top: 1rem; }
+
+.wrap { max-width: var(--wide); margin: 0 auto; padding: 0 1.25rem; }
+@media (min-width: 48rem) { .wrap { padding: 0 2.5rem; } }
+
+p { margin: 0 0 1em; max-width: var(--measure); }
+
+/* Top bar */
+.topbar {
+  display: flex; justify-content: flex-end; align-items: center; gap: 1.5rem; flex-wrap: wrap;
+  padding: 1.5rem 0; font-size: 1rem; line-height: 1.4;
+}
+.topbar a { color: var(--ink); text-decoration: none; }
+.topbar a:hover { color: var(--accent); text-decoration: underline; }
+.topbar .lang-switch { color: var(--accent); font-weight: 600; border: 2px solid var(--accent); border-radius: 999px; padding: 0.2rem 0.85rem; margin: -0.2rem 0 -0.2rem 0.25rem; }
+.topbar .lang-switch:hover { background: var(--accent); color: var(--paper); text-decoration: none; }
+@media (max-width: 30rem) { .topbar { gap: 0.9rem; font-size: 0.95rem; } .topbar .lang-switch { margin-left: 0; } }
+
+/* Hero */
+.hero {
+  display: grid; gap: 2rem;
+  padding: 2rem 0 5rem;
+  border-bottom: 2px solid var(--ink);
+}
+.hero-photo { order: -1; }
+.hero-photo img {
+  width: 9rem; height: 9rem; object-fit: cover; border-radius: 1rem;
+  display: block; background: var(--accent-wash);
+}
+@media (min-width: 56rem) {
+  .hero { grid-template-columns: 1fr 15rem; align-items: start; gap: 4rem; padding-top: 3rem; }
+  .hero-photo { order: 0; }
+  .hero-photo img { width: 15rem; height: 15rem; border-radius: 1.5rem; }
+}
+
+h1 {
+  font-size: clamp(2.75rem, 8vw, 5.75rem);
+  line-height: 0.98;
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  margin: 0 0 1.25rem;
+}
+.positioning {
+  font-size: clamp(1.35rem, 2.6vw, 1.875rem);
+  line-height: 1.25;
+  color: var(--accent);
+  font-weight: 600;
+  margin: 0 0 2.5rem;
+  max-width: 30ch;
+}
+.lead {
+  font-size: clamp(1.25rem, 2.1vw, 1.5rem);
+  line-height: 1.4;
+  font-weight: 600;
+  max-width: 38ch;
+}
+.based { color: var(--muted); }
+
+.button {
+  display: inline-block; margin-top: 1rem;
+  background: var(--ink); color: var(--paper);
+  padding: 0.85rem 1.6rem; font-weight: 600; text-decoration: none;
+  border-radius: 999px;
+}
+.button:hover { background: var(--accent); color: var(--paper); }
+
+/* Sections */
+section { padding: 5.5rem 0; border-bottom: 2px solid var(--ink); }
+
+h2 {
+  font-size: clamp(1.9rem, 4vw, 2.75rem);
+  line-height: 1.1;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin: 0 0 2.5rem;
+  max-width: 24ch;
+}
+.intro { font-size: 1.25rem; margin-bottom: 2.5rem; }
+
+/* Services */
+.service {
+  display: grid; gap: 0.5rem 3rem;
+  padding: 0; margin-bottom: 3.5rem;
+}
+@media (min-width: 48rem) { .service { grid-template-columns: 16rem 1fr; } }
+.service h3 { font-size: 1.5rem; line-height: 1.2; margin: 0 0 0.35rem; font-weight: 800; }
+.duration { color: var(--accent); font-weight: 600; margin: 0; }
+.recent { color: var(--muted); font-size: 1.0625rem; font-style: italic; }
+.note { margin: 0; font-size: 1.25rem; }
+
+/* Breadth */
+.breadth p { font-size: clamp(1.2rem, 2vw, 1.4rem); line-height: 1.5; max-width: 40rem; }
+.breadth p:last-child { font-weight: 600; }
+
+/* Clients */
+.clients p { font-size: clamp(1.3rem, 2.4vw, 1.75rem); line-height: 1.4; max-width: 48rem; }
+
+/* Selected work */
+.cases { display: grid; gap: 0.5rem; }
+.case summary {
+  list-style: none; cursor: pointer;
+  display: grid; grid-template-columns: 1fr auto; gap: 0.25rem 1.5rem; align-items: start;
+  padding: 1.25rem 0;
+}
+.case summary::-webkit-details-marker { display: none; }
+.case summary:hover .client { color: var(--accent); }
+.client { display: block; font-size: clamp(1.4rem, 2.8vw, 2rem); font-weight: 800; line-height: 1.15; letter-spacing: -0.015em; }
+.claim { display: block; font-size: clamp(1.1rem, 1.8vw, 1.3rem); line-height: 1.4; color: var(--muted); margin-top: 0.4rem; max-width: 46rem; }
+.toggle {
+  grid-column: 2; grid-row: 1 / span 2;
+  width: 2.75rem; height: 2.75rem; border-radius: 50%;
+  border: 2px solid var(--accent); color: var(--accent);
+  display: grid; place-items: center; margin-top: 0.1rem;
+  transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease;
+}
+.toggle svg { width: 1.1rem; height: 1.1rem; }
+.case[open] .toggle { transform: rotate(45deg); background: var(--accent); color: var(--paper); }
+.case-body { padding: 0 0 2.5rem; }
+.case-body p { max-width: var(--measure); }
+.shots { display: grid; gap: 1.5rem; margin: 0 0 2rem; }
+@media (min-width: 48rem) { .shots { grid-template-columns: 1fr 1fr; align-items: start; } }
+.shots figure { margin: 0; }
+.shots img { display: block; width: 100%; height: auto; border: 1px solid var(--line); }
+.shots figcaption { margin-top: 0.6rem; font-size: 0.95rem; color: var(--muted); }
+.also { margin-top: 2.5rem; color: var(--muted); max-width: 48rem; }
+.also strong { color: var(--ink); }
+
+/* Principles */
+.principles { display: grid; gap: 2.5rem 3.5rem; }
+@media (min-width: 48rem) { .principles { grid-template-columns: 1fr 1fr; } }
+.principles h3 { font-size: 1.35rem; margin: 0 0 0.5rem; font-weight: 800; }
+.principles h3::before {
+  content: ""; display: block; width: 2.5rem; height: 4px; background: var(--accent); margin-bottom: 1rem;
+}
+.principles p { margin: 0; }
+
+/* Contact */
+.contact p { font-size: 1.25rem; }
+.email {
+  display: inline-block; margin: 1rem 0 2rem;
+  font-size: clamp(1.5rem, 5vw, 3rem); font-weight: 800; letter-spacing: -0.02em;
+  word-break: break-word; line-height: 1.15;
+}
+.contact-links { display: flex; gap: 2rem; flex-wrap: wrap; font-size: 1.125rem; font-weight: 600; margin: 0; padding: 0; list-style: none; }
+
+footer { padding: 2.5rem 0 3rem; color: var(--muted); font-size: 0.95rem; }
+.footer-row { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem 2rem; }
+.footer-links { display: flex; flex-wrap: wrap; gap: 1.5rem; }
+</style>
 </head>
-
 <body>
-    <div class="container-fluid">
+<div id="lang-en" lang="en">
+<a class="skip" href="#main">Skip to content</a>
 
-        <div class="row">
-            <div class="col-sm" id="hola">
-                <h1>Hi.<br>I'm <strong>Julián Rodriguez Orihuela</strong>.</h1>
-            </div>
-            <div class="col-sm">
-                <img class="rounded float-right img-fluid" src="foto.jpg" alt="Julián Rodriguez Orihuela's picture">
-            </div>
+<div class="wrap">
+  <nav class="topbar" aria-label="Sections">
+    <a href="#services">Services</a>
+    <a href="#work">Work</a>
+    <a href="#contact">Contact</a>
+    <a class="lang-switch" href="?lang=es" data-setlang="es" hreflang="es" lang="es">Español</a>
+  </nav>
+
+  <header class="hero">
+    <div>
+      <h1>Julián Rodríguez Orihuela</h1>
+      <p class="positioning">Digital transformation for governments and public institutions</p>
+      <p class="lead">Most digital transformation fails on organisational change rather than technology. My work is getting an institution to work differently, and to keep working differently after I leave.</p>
+      <p>For over a decade I've helped governments, public institutions and international organisations redesign their digital services and the operating models behind them. I've unified more than a thousand government websites in Argentina, set national digital service standards, built product teams from scratch, and mentored the people who have to sustain all of it.</p>
+      <p class="based">I'm based in Madrid and work internationally.</p>
+      <a class="button" href="#contact">Get in touch</a>
+    </div>
+    <div class="hero-photo">
+      <img src="img/julian.jpg" width="640" height="640" alt="Portrait of Julián Rodríguez Orihuela">
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section id="services" aria-labelledby="services-title">
+      <h2 id="services-title">What I can help with</h2>
+      <p class="intro">Three ways I usually work. Most engagements start with the first.</p>
+
+      <div class="service">
+        <div>
+          <h3>Diagnostics and strategy</h3>
+          <p class="duration">1 to 6 weeks</p>
         </div>
+        <div>
+          <p>An outside read on where you are and what to do first. Digital service reviews, information architecture and content strategy, operating model assessments, prioritised roadmaps. You get a document you can act on, and usually a conversation you have been avoiding.</p>
+          <p class="recent">Recent: an information architecture and content strategy for the Central Bank of Argentina; a website and content review for the Open Government Partnership; a data aggregation framework for CIPPEC; a digital government roadmap for the Canary Islands.</p>
+        </div>
+      </div>
 
-        <h2 id="bajada">I'm a digital transformation consultant and senior product manager based in Madrid.</h2>
+      <div class="service">
+        <div>
+          <h3>Embedded transformation support</h3>
+          <p class="duration">3 to 12 months</p>
+        </div>
+        <div>
+          <p>Working inside the organisation on the change itself: digital service standards, ways of working, product practice, delivery. This is the slow part. Standards only hold if people use them, so most of the time goes on people rather than documents.</p>
+          <p class="recent">Recent: mentoring and service clinics for the Dominican government's digital transformation programme, through the Public Digital associates network.</p>
+        </div>
+      </div>
 
-        <p id="resumen">For over a decade, I've partnered with organisations across the public and private sectors
-to <strong>build, launch, and scale impactful products while transforming how they work</strong>. My
-passion lies in driving digital transformation, uncovering innovative ways to harness
-technology for better outcomes, and assembling high-performing teams that thrive on
-modern practices: empowered product management, user-centric design, and agile
-development.</p>
+      <div class="service">
+        <div>
+          <h3>Building teams that last</h3>
+          <p class="duration">Flexible, often alongside the above</p>
+        </div>
+        <div>
+          <p>Designing and staffing the multidisciplinary teams an organisation needs to keep delivering on its own. That covers defining roles and profiles, finding candidates, running interviews and building teams from scratch, then mentoring product and delivery managers so the team holds together long after it is formed. I've built product practices from zero in a national government, a consultancy, and a growing product company.</p>
+          <p class="recent">Recent: a capability diagnostic of the service teams in the Dominican Republic to decide what to hire for.</p>
+        </div>
+      </div>
 
-        <div class="row">
+      <p class="note">I work on my own, embedded in your team, or with trusted associates when a project needs a wider set of skills.</p>
+    </section>
 
-            <div class="col-sm izquierda">
+    <section class="breadth" aria-labelledby="breadth-title">
+      <h2 id="breadth-title">What the work needs, when it needs it</h2>
+      <p>In one week this job can mean interviewing users, critiquing a design, rewriting a service guide, restructuring a team, and presenting to a minister. Over fifteen years I've worked in most of those seats: digital strategy, user research and interviews, content design and information architecture, UI and design critique, hiring and team building, roadmaps and delivery, communications, and the political conversation that decides whether any of it ships.</p>
+      <p>Most organisations call me when their digital work has become fragmented: too many initiatives, unclear priorities, teams pulling in different directions. I help turn that into a clear strategy, with an agreed view of what matters, in what order, and who needs to do it.</p>
+      <p>You can hire better specialists than me in any one of those crafts. What I bring is the ability to hold the whole shape of a problem, talk credibly with every specialist in the room, and tell you which of them you need. Sometimes that person is not me, and I will say so.</p>
+    </section>
 
-                <p>I am currently working as an external consultant on digital transformation.</p>
+    <section class="clients" aria-labelledby="clients-title">
+      <h2 id="clients-title">Who I've worked with</h2>
+      <p>Governments and public institutions in Argentina, the Dominican Republic and Spain. The Central Bank of Argentina. International organisations including the Open Government Partnership. The Public Digital associates network. Private companies including Shell Energy UK.</p>
+    </section>
+
+    <section id="work" aria-labelledby="work-title">
+      <h2 id="work-title">Selected work</h2>
+
+      <div class="cases">
+
+        <details class="case">
+          <summary>
+            <span>
+              <span class="client">Government of Argentina</span>
+              <span class="claim">A thousand websites unified into one national platform, from zero to more than ten million monthly users.</span>
+            </span>
+            <span class="toggle" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M8 1v14M1 8h14" stroke="currentColor" stroke-width="2.2" fill="none"/></svg></span>
+          </summary>
+          <div class="case-body">
+            <div class="shots">
+              <figure>
+                <img src="img/argentinagobar.jpg" width="1321" height="1014" loading="lazy" alt="Argentina.gob.ar home page in its first public version, with a search box asking what you are looking for and cards for the most requested services.">
+                <figcaption>Argentina.gob.ar in its first public version.</figcaption>
+              </figure>
+              <figure>
+                <img src="img/miargentina.jpg" width="1588" height="933" loading="lazy" alt="Mi Argentina citizen profile showing a digital national driver's licence and driver points balance, with example data.">
+                <figcaption>Mi Argentina, the citizen profile, showing the digital driver's licence.</figcaption>
+              </figure>
             </div>
+            <p>The Argentine government's digital presence was spread across more than a thousand separate websites, each with its own domain, design, voice and standards. A citizen looking for a service had no reliable place to start, and no two agencies described the same service the same way.</p>
+            <p>As <a href="https://www.argentina.gob.ar/jefatura/innovacion-ciencia-y-tecnologia/tics/servicios-digitales">National Director of Digital Services</a> I led a team of more than fifty people implementing a single-domain strategy for the whole national administration. We built <a href="https://www.argentina.gob.ar/">argentina.gob.ar</a> as the single official channel and migrated a thousand existing sites into it. Alongside it we launched <a href="https://www.argentina.gob.ar/miargentina">Mi Argentina</a>, the citizen platform for personal documents and transactions, and a national appointments system for government offices.</p>
+            <p>The standards mattered as much as the platforms. We published digital service standards for government websites and mobile applications, catalogued every government service and rewrote their guides in plain language with the communications office of every ministry and agency, and built a citizen satisfaction strategy out of manuals, front-desk training and feedback platforms.</p>
+            <p>By the end of 2018 the site had gone from zero to more than ten million monthly users. Mi Argentina laid the groundwork for the digital driver's licence, digital vehicle credentials and the digital national ID. Argentina.gob.ar is still the country's single official channel for government information and services.</p>
+            <p><em>I spoke about this work at DrupalGovCon 2018: <a href="https://www.youtube.com/watch?v=r5M_ouUK8wI&amp;t=380s">watch the talk</a>.</em></p>
+          </div>
+        </details>
 
-            <div class="col-sm derecha">
-								
-    <p>
-        
-        As a freelance consultant in <a href="https://public.digital/life-at-pd/our-network">Public Digital's network of freelance experts</a>, I support cross-functional teams through coaching and training. I have also contributed to the <a href="https://www.opengovpartnership.org/">Open Government Partnership</a> by shaping their website strategy, enhancing usability, managing web content, and improving team processes.</p>
-            
-            </div>
+        <details class="case">
+          <summary>
+            <span>
+              <span class="client">Public sector, Dominican Republic</span>
+              <span class="claim">Mentoring product and delivery teams in a national digital transformation programme.</span>
+            </span>
+            <span class="toggle" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M8 1v14M1 8h14" stroke="currentColor" stroke-width="2.2" fill="none"/></svg></span>
+          </summary>
+          <div class="case-body">
+            <p>Through the <a href="https://public.digital/life-at-pd/our-network">Public Digital associates network</a>, I work with the Dominican government's digital transformation programme, which is standing up a new national digital government approach.</p>
+            <p>I started by mentoring product managers and delivery managers one to one, and working with them on how multidisciplinary teams can deliver public services iteratively. Alongside that I ran clinics with individual service transformation teams: short working sessions that take a team through what they are doing, how they are doing it, and how to keep going with our ways of working after we leave.</p>
+            <p>One of those teams launched a fully digital travel permit for minors in May 2026. <a href="https://presidencia.gob.do/noticias/gobierno-presenta-nuevo-sistema-de-permiso-de-salida-de-menor-100-digital-servicio-estara" hreflang="es">Read the government's announcement (in Spanish)</a>.</p>
+            <p>More recently I have worked on the capability side, running a diagnostic across the service teams to map where each discipline stands and what to hire for, and on how the state buys technology.</p>
+            <p>All of this is ongoing. My role is to supply inputs and criteria taken from my experience. The decisions belong to the Dominican counterparts, and the aim is to leave capability behind rather than dependency.</p>
+          </div>
+        </details>
+
+        <details class="case">
+          <summary>
+            <span>
+              <span class="client">Central Bank of Argentina</span>
+              <span class="claim">A new information architecture and content strategy for a site four very different audiences use for four different reasons.</span>
+            </span>
+            <span class="toggle" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M8 1v14M1 8h14" stroke="currentColor" stroke-width="2.2" fill="none"/></svg></span>
+          </summary>
+          <div class="case-body">
+            <p>In 2019 the Central Bank of Argentina asked me to define the information architecture and content strategy <a href="https://www.bcra.gob.ar/">its website</a> is now built on. The site carries information people use to make consequential decisions: interest rates, statistics, procedures, financial education. It was organised around the institution rather than the people using it. A citizen checking a fixed-term deposit rate, a journalist on deadline, a financial institution filing a procedure and an academic pulling historical data need different things and take different routes through a site.</p>
+            <p>I led the work with an associate. We benchmarked reference central banks, interviewed content producers, systems teams and end users, and iterated on wireframes until the bank's own teams and suppliers could build from them.</p>
+            <p>The proposal restructured the site around audiences rather than departments, made search the primary route into content, gave financial education its own space in plain language, and rewrote procedures as actions: "Pay a financial penalty" instead of "Financial penalties". Every piece of content was designed around how someone would look for it.</p>
+            <p>We also defined content types, URL strategy, taxonomy and metadata, public feedback mechanisms, and a digital team model the institution could use to keep the strategy current after we left.</p>
+          </div>
+        </details>
+
+        <details class="case">
+          <summary>
+            <span>
+              <span class="client">City of Buenos Aires</span>
+              <span class="claim">A 30-person team, 200,000 monthly users, and a city government's main public channel through a pandemic.</span>
+            </span>
+            <span class="toggle" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M8 1v14M1 8h14" stroke="currentColor" stroke-width="2.2" fill="none"/></svg></span>
+          </summary>
+          <div class="case-body">
+            <p>As Digital Experience Director I led a team of thirty UX practitioners, content designers and developers working on <a href="https://www.buenosaires.gob.ar/">buenosaires.gob.ar</a>, used by more than 200,000 people each month, and set the digital product standards every part of the city government built to.</p>
+            <p>Three months in, the pandemic arrived. The team moved from fully co-located to fully distributed within weeks, and the website became the city's official channel for emergency communication and public health information. We kept it running, established new ways of working for a team that had never worked remotely, and shipped a new version of the site and its design system through the same period.</p>
+            <p>Earlier, as Creativity and Usability Manager in the city's e-Gov office, I led the original single-domain strategy that unified four hundred separate city websites, along with the relaunch of the <a href="https://mapa.buenosaires.gob.ar">City Map</a> and the <em>Cómo llego</em> journey planner app.</p>
+          </div>
+        </details>
+
+        <details class="case">
+          <summary>
+            <span>
+              <span class="client">Open Government Partnership</span>
+              <span class="claim">A website and content review that reshaped their development roadmap.</span>
+            </span>
+            <span class="toggle" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M8 1v14M1 8h14" stroke="currentColor" stroke-width="2.2" fill="none"/></svg></span>
+          </summary>
+          <div class="case-body">
+            <p>The <a href="https://www.opengovpartnership.org/">Open Government Partnership</a>'s website is how it reaches its members and the public, and it had grown to the point where usability, content management and the team's own processes worked against each other.</p>
+            <p>I evaluated the site and produced a report with recommendations on user experience, on how web content is managed and governed, and on how the team works on it day to day.</p>
+            <p>The recommendations fed into the organisation's development roadmap and shaped its content strategy and operational approach.</p>
+          </div>
+        </details>
+
+      </div>
+
+      <p class="also"><strong>Also:</strong> product leadership for Shell Energy UK's mobile app at <a href="https://www.kinandcarta.com/en/">Kin + Carta</a> (now Valtech), serving more than 130,000 monthly users; a digital government roadmap for the Canary Islands; process mapping for ERP and CRM implementation at Orilat; a data aggregation and visualisation framework for CIPPEC; and <a href="https://tamiz.es/">Tamiz</a>, a public procurement SaaS product I took from zero to launch at <a href="https://www.grupoevm.com/">EVM</a>.</p>
+      <p class="also">My full background is on <a href="https://www.linkedin.com/in/julianrod" onclick="pa.track({name: 'gotoLinkedIn'})">LinkedIn</a>.</p>
+    </section>
+
+    <section aria-labelledby="how-title">
+      <h2 id="how-title">How I work</h2>
+      <div class="principles">
+        <div>
+          <h3>Adoption over deliverables</h3>
+          <p>A strategy nobody follows is a document. I would rather leave a team that works differently than a report that reads well.</p>
+        </div>
+        <div>
+          <h3>With the team you have</h3>
+          <p>The goal is that the organisation keeps going without me, which means mentoring and hiring as much as advising.</p>
+        </div>
+        <div>
+          <h3>Start with real services and real users</h3>
+          <p>The starting point is what a citizen or a customer is trying to do, before the org chart or the technology roadmap.</p>
+        </div>
+        <div>
+          <h3>Plain language throughout</h3>
+          <p>In the services we write for the people who use them, and in the conversations about what to do next.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact</h2>
+      <p>I take on diagnostics, transformation programmes and team-building engagements with governments, public institutions and private organisations. To discuss a possible engagement, write to me with a brief description of your organisation and what you are trying to change.</p>
+      <p>If you are not sure yet whether I am the right fit, send me a few lines about your situation anyway. I will tell you honestly whether I can help and, if I can't, who might.</p>
+      <a class="email" href="mailto:julianrod@gmail.com" onclick="pa.track({name: 'email'})">julianrod@gmail.com</a>
+      <ul class="contact-links">
+        <li><a href="https://www.linkedin.com/in/julianrod" onclick="pa.track({name: 'gotoLinkedIn'})">LinkedIn</a></li>
+        <li><a href="Resume-Julian-Rodriguez-Orihuela.pdf" onclick="pa.track({name: 'downloadResume'})">Download CV (PDF)</a></li>
+      </ul>
+    </section>
+
+  </main>
 </div>
-                <div class="row">
 
-            <div class="col-sm izquierda">
-
-                <p>I worked as a <strong>digital transformation and innovation consultant</strong> at <a href="https://www.grupoevm.com/">EVM</a> from February 2022 to December 2024, in charge of the formation of a business unit dedicated to digital products.</p>
-            </div>
-
-            <div class="col-sm derecha">
-
-                <p>I led the creation of the new product team, including its ways of working, and the definition, strategy and deployment of <a href="https://tamiz.es/">Tamiz</a>, the first product from the company, dedicated to public procurement in Spain.</p>
-								
-				
-            </div>
-                    
-                 
-                    
-</div>
-        
-        <div class="captura">
-
-<img src="img/tamiz.png" alt="Tamiz" class="rounded mx-auto d-block border">
-
-</div>   
-        
-        <div class="row">
-
-            <div class="col-sm izquierda">
-
-                <p>I worked as a <strong>product manager</strong> at <a href="https://www.kinandcarta.com/en/">Kin + Carta</a> from October 2020 to September 2021, in charge of <a href="https://www.shellenergy.co.uk/energy/mobile-app">Shell Energy's mobile app</a>.</p>
-            </div>
-
-            <div class="col-sm derecha">
-
-                <p>I worked defining product vision, OKRs, roadmap y features in close contact with the company stakeholders, and collaborated with a cross-functional team (UX design and research, Android y iOS development, QA) in the delivery and continuous improvement of the app.</p>
-								
-				
-            </div>
-</div>
-        <div class="row">
-
-            <div class="col-sm izquierda">
-
-                <p>At the argentinian's national government I worked as <strong>National Director for Digital Services</strong> (Modernisation Ministry) between 2016 and October 2018, where I worked in the creation and implementation of the digital strategy and standards for the whole administration. There I was in charge of a team of 60+ people.</p>
-            </div>
-
-            <div class="col-sm derecha">
-
-                <p>From this strategy we created the <a href="https://www.argentina.gob.ar">official government website Argentina.gob.ar</a>, the citizen platform <a href="https://mi.argentina.gob.ar">Mi Argentina</a>, its <a href="https://www.argentina.gob.ar/aplicaciones/app">mobile app</a>, the <a href="https://www.argentina.gob.ar/turnos">National Appointments System</a>, and other developments.</p>
-                <p><a href="https://www.argentina.gob.ar/modernizacion/serviciosdigitales">Go to the Digital Services website</a></p>
-                </p>
-            </div>
-
-        </div>
-
-<!--
-        <div class="row">
-
-            <div class="col-sm izquierda">
-
-                <p>I worked on the development of a <strong>citizen care strategy</strong>, implementing it through training, manuals and digital platforms to help measure satisfaction.
-                </p>
-            </div>
-
-            <div class="col-sm derecha">
-
-                <p>This strategy had as a result a citizen care manual to be used as a framework for the whole administration, the implementation of changes in government offices workflows  and a change of citizen support strategy working with front desk agents, with a channel for agents to provide feedback for the improvement of internal processes.</p>
-
-                <p><a href="https://www.argentina.gob.ar/modernizacion/serviciosdigitales/principiosdeatencion">Go to the principles of citizen care webpage, from whith the citizen care manual was created</a></p>
-                </p>
-                </p>
-            </div>
-
-        </div>
--->
-
-        <div class="row">
-
-            <div class="col-sm izquierda">
-
-                <p>I was in charge of the <strong>design and implementation of the official website Argentina.gob.ar</strong>, that unifies under one strategy all service guides from the argentinian government and all of the official websites from ministries and official agencies.</p>
-            </div>
-
-            <div class="col-sm derecha">
-
-                <p>Approximately <strong>1000 pre-existing websites</strong> were unified under this websites and we worked with every ministry and agency's communication office.</p>
-                <p>In the span of 3 years we were able to unify all the ministries' websites and <strong>more than 1000 citizen services</strong> in a readable language and with clear steps.</p>
-                <p>At the end of 2018 the website had an average of 10.000.000 unique monthly users.</p>
-                <p><a href="https://www.argentina.gob.ar">Go to Argentina.gob.ar</a></p>
-                <p><a href="https://www.youtube.com/watch?v=r5M_ouUK8wI&t=380">Presentation at DrupalGovCon 2018 about Argentina.gob.ar (video, ~30 minutes)</a></p>
-
-            </div>
-
-        </div>
-
-<div class="captura">
-
-<img src="img/argentinagobar-desktop.png" alt="Argentina.gob.ar screen capture from early 2016" class="rounded mx-auto d-block border">
-
+<footer>
+  <div class="wrap footer-row">
+    <span>Julián Rodríguez Orihuela, Madrid.</span>
+    <span class="footer-links"><a href="#main">Back to top</a><a href="?lang=es" data-setlang="es" hreflang="es" lang="es">Leer en español</a></span>
+  </div>
+</footer>
 </div>
 
+<div id="lang-es" lang="es" hidden>
+<a class="skip" href="#main-es">Ir al contenido</a>
 
-        <div class="row">
+<div class="wrap">
+  <nav class="topbar" aria-label="Secciones">
+    <a href="#servicios">Servicios</a>
+    <a href="#trabajos">Trabajos</a>
+    <a href="#contacto">Contacto</a>
+    <a class="lang-switch" href="?lang=en" data-setlang="en" hreflang="en" lang="en">English</a>
+  </nav>
 
-            <div class="col-sm izquierda">
+  <header class="hero">
+    <div>
+      <h1>Julián Rodríguez Orihuela</h1>
+      <p class="positioning">Transformación digital para gobiernos e instituciones públicas</p>
+      <p class="lead">La mayoría de las transformaciones digitales fracasan por el cambio organizacional antes que por la tecnología. Mi trabajo es lograr que una institución trabaje de otra manera, y que lo siga haciendo cuando yo ya no esté.</p>
+      <p>Desde hace más de diez años ayudo a gobiernos, instituciones públicas y organismos internacionales a rediseñar sus servicios digitales y los modelos operativos que los sostienen. Unifiqué más de mil sitios web del gobierno argentino, definí estándares nacionales de servicios digitales, formé equipos de producto desde cero y acompañé como mentor a las personas que sostienen todo eso.</p>
+      <p class="based">Vivo en Madrid y trabajo en proyectos internacionales.</p>
+      <a class="button" href="#contacto">Contactar</a>
+    </div>
+    <div class="hero-photo">
+      <img src="img/julian.jpg" width="640" height="640" alt="Retrato de Julián Rodríguez Orihuela">
+    </div>
+  </header>
 
-                <p>I led the design and development of <strong>Mi Argentina</strong>, citizen portal and app that works with Argentina.gob.ar, with the main goal of being the place where citizens can find their information and services in a centralized and customized way.</p>
-            </div>
+  <main id="main-es">
 
-            <div class="col-sm derecha">
+    <section id="servicios" aria-labelledby="servicios-titulo">
+      <h2 id="servicios-titulo">En qué puedo ayudar</h2>
+      <p class="intro">Estas son las tres formas en que suelo trabajar. La mayoría de los proyectos empiezan por la primera.</p>
 
-                <p>From this work a consolidation of digital documents started to happen, first with the national driver's licence, the disability certificate, the organ donor card and social security information.</p>
-                <p>It also paved the way for other advances, such as the <a href="https://www.lanacion.com.ar/autos/al-volante/el-registro-de-conducir-en-el-telefono-celular-nid2219814">digital driver's licence</a>, <a href="https://www.lanacion.com.ar/economia/desde-junio-todos-papeles-del-auto-estaran-nid2223457">other vehicle credentials</a> and <a href="https://www.lanacion.com.ar/economia/lanza-gobierno-dni-digital-nid2292535">the digital national ID card</a>.</p>
-
-                <p><a href="https://www.argentina.gob.ar/miargentina">Go to Mi Argentina info page</a></p>
-            </div>
-
+      <div class="service">
+        <div>
+          <h3>Diagnóstico y estrategia</h3>
+          <p class="duration">De 1 a 6 semanas</p>
         </div>
+        <div>
+          <p>Una mirada externa sobre dónde está su organización y qué hacer primero. Revisiones de servicios digitales, arquitectura de información y estrategia de contenidos, evaluación de modelos operativos, hojas de ruta priorizadas. El resultado es un documento con el que se puede actuar y que permite iniciar conversaciones pendientes.</p>
+          <p class="recent">Recientes: arquitectura de información y estrategia de contenidos para el Banco Central de la República Argentina; revisión del sitio web y los contenidos de la Open Government Partnership; un marco de agregación de datos para CIPPEC; una hoja de ruta de gobierno digital para Canarias.</p>
+        </div>
+      </div>
 
-<div class="captura">
+      <div class="service">
+        <div>
+          <h3>Acompañamiento de la transformación</h3>
+          <p class="duration">De 3 a 12 meses</p>
+        </div>
+        <div>
+          <p>Trabajo dentro de la organización sobre el cambio en sí: estándares de servicios digitales, formas de trabajo, práctica de producto, entrega. Es la parte lenta. Los estándares sólo se sostienen si la gente los usa, así que la mayor parte del tiempo se dedica a las personas más que a los documentos.</p>
+          <p class="recent">Reciente: mentoría y clínicas de servicio para el programa de transformación digital del gobierno dominicano, a través de la red de asociados de Public Digital.</p>
+        </div>
+      </div>
 
-<img src="img/miargentina-desktop.png" alt="Mi Argentina screen capture" class="rounded mx-auto d-block">
+      <div class="service">
+        <div>
+          <h3>Equipos que perduran</h3>
+          <p class="duration">Flexible, a menudo junto con lo anterior</p>
+        </div>
+        <div>
+          <p>Diseño y conformación de los equipos multidisciplinarios que una organización necesita para seguir entregando por su cuenta. Eso incluye definir roles y perfiles, buscar candidatos, hacer entrevistas y armar equipos desde cero, y después acompañar como mentor a product managers y delivery managers para que el equipo se sostenga mucho después de haberse formado. Construí prácticas de producto desde cero en un gobierno nacional, una consultora y una empresa de producto en crecimiento.</p>
+          <p class="recent">Reciente: un diagnóstico de capacidades de los equipos de servicio en República Dominicana para definir qué perfiles incorporar.</p>
+        </div>
+      </div>
 
+      <p class="note">Trabajo por mi cuenta, integrado en el equipo de su organización o con asociados de confianza cuando un proyecto necesita un conjunto más amplio de capacidades.</p>
+    </section>
+
+    <section class="breadth" aria-labelledby="amplitud-titulo">
+      <h2 id="amplitud-titulo">Lo que el trabajo necesita, cuando lo necesita</h2>
+      <p>En una misma semana, este trabajo puede implicar entrevistar a usuarios, revisar un diseño, reescribir la guía de un trámite, reorganizar un equipo y presentar ante un ministro. En más de quince años ocupé casi todos esos lugares: estrategia digital, investigación con usuarios, diseño de contenidos y arquitectura de información, diseño de interfaces y revisión de diseño, contratación y formación de equipos, hojas de ruta y entrega, comunicación, y la conversación política que decide si algo de todo eso sale adelante.</p>
+      <p>La mayoría de las organizaciones me llaman cuando su trabajo digital se fragmentó: demasiadas iniciativas, prioridades poco claras, equipos que tiran en direcciones distintas. Ayudo a convertir eso en una estrategia clara, con una visión compartida de qué importa, en qué orden y quién tiene que hacerlo.</p>
+      <p>En cualquiera de esas disciplinas hay especialistas mejores que yo. Lo que aporto es la capacidad de ver el problema completo, hablar con criterio con cada especialista y señalar cuál de ellos hace falta. A veces esa persona no soy yo, y lo digo.</p>
+    </section>
+
+    <section class="clients" aria-labelledby="clientes-titulo">
+      <h2 id="clientes-titulo">Con quién trabajé</h2>
+      <p>Gobiernos e instituciones públicas de Argentina, República Dominicana y España. El Banco Central de la República Argentina. Organismos internacionales como la Open Government Partnership. La red de asociados de Public Digital. Empresas privadas como Shell Energy UK.</p>
+    </section>
+
+    <section id="trabajos" aria-labelledby="trabajos-titulo">
+      <h2 id="trabajos-titulo">Trabajos seleccionados</h2>
+
+      <div class="cases">
+
+        <details class="case">
+          <summary>
+            <span>
+              <span class="client">Gobierno de la Nación Argentina</span>
+              <span class="claim">Mil sitios web unificados en una sola plataforma nacional, de cero a más de diez millones de usuarios mensuales.</span>
+            </span>
+            <span class="toggle" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M8 1v14M1 8h14" stroke="currentColor" stroke-width="2.2" fill="none"/></svg></span>
+          </summary>
+          <div class="case-body">
+            <div class="shots">
+              <figure>
+                <img src="img/argentinagobar.jpg" width="1321" height="1014" loading="lazy" alt="Página de inicio de Argentina.gob.ar en su primera versión pública, con un buscador que pregunta qué estás buscando y tarjetas con los trámites más consultados.">
+                <figcaption>Argentina.gob.ar en su primera versión pública.</figcaption>
+              </figure>
+              <figure>
+                <img src="img/miargentina.jpg" width="1588" height="933" loading="lazy" alt="Perfil ciudadano de Mi Argentina con la licencia nacional de conducir digital y el saldo de puntos, con datos de ejemplo.">
+                <figcaption>Mi Argentina, el perfil ciudadano, con la licencia de conducir digital.</figcaption>
+              </figure>
+            </div>
+            <p>La presencia digital del gobierno argentino estaba repartida en más de mil sitios web distintos, cada uno con su propio dominio, diseño, tono y estándares. Una persona que buscaba un trámite no tenía un punto de partida confiable, y no había dos organismos que describieran el mismo servicio de la misma manera.</p>
+            <p>Como <a href="https://www.argentina.gob.ar/jefatura/innovacion-ciencia-y-tecnologia/tics/servicios-digitales">Director Nacional de Servicios Digitales</a> lideré un equipo de más de cincuenta personas que implementó una estrategia de dominio único para toda la administración nacional. Construimos <a href="https://www.argentina.gob.ar/">argentina.gob.ar</a> como canal oficial único y migramos a él mil sitios existentes. En paralelo lanzamos <a href="https://www.argentina.gob.ar/miargentina">Mi Argentina</a>, la plataforma ciudadana para documentos personales y trámites, y un sistema nacional de turnos para oficinas públicas.</p>
+            <p>Los estándares importaron tanto como las plataformas. Publicamos estándares de servicios digitales para los sitios web y las aplicaciones móviles del gobierno, catalogamos todos los servicios del Estado y reescribimos sus guías en lenguaje claro junto con las áreas de comunicación de cada ministerio y organismo, y diseñamos una estrategia de satisfacción ciudadana con manuales, capacitación para la atención presencial y plataformas de opinión.</p>
+            <p>A fines de 2018 el sitio había pasado de cero a más de diez millones de usuarios mensuales. Mi Argentina sentó las bases de la licencia de conducir digital, las credenciales digitales de vehículos y el DNI digital. Argentina.gob.ar sigue siendo el canal oficial único del país para información y servicios del Estado.</p>
+            <p><em>Presenté este trabajo en DrupalGovCon 2018: <a href="https://www.youtube.com/watch?v=r5M_ouUK8wI&amp;t=380s" hreflang="en">ver la charla (en inglés)</a>.</em></p>
+          </div>
+        </details>
+
+        <details class="case">
+          <summary>
+            <span>
+              <span class="client">Sector público, República Dominicana</span>
+              <span class="claim">Mentoría a equipos de producto y entrega en un programa nacional de transformación digital.</span>
+            </span>
+            <span class="toggle" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M8 1v14M1 8h14" stroke="currentColor" stroke-width="2.2" fill="none"/></svg></span>
+          </summary>
+          <div class="case-body">
+            <p>A través de la <a href="https://public.digital/life-at-pd/our-network" hreflang="en">red de asociados de Public Digital</a>, trabajo con el programa de transformación digital del gobierno dominicano, que está poniendo en marcha un nuevo enfoque nacional de gobierno digital.</p>
+            <p>Empecé como mentor de product managers y delivery managers de forma individual, trabajando con ellos en cómo los equipos multidisciplinarios pueden entregar servicios públicos de manera iterativa. En paralelo realicé clínicas con equipos de transformación de servicios concretos: sesiones de trabajo breves que recorren con cada equipo qué está haciendo, cómo lo está haciendo y cómo seguir con nuestras formas de trabajo cuando ya no estemos.</p>
+            <p>Uno de esos equipos lanzó en mayo de 2026 un permiso de salida de menores 100 % digital. <a href="https://presidencia.gob.do/noticias/gobierno-presenta-nuevo-sistema-de-permiso-de-salida-de-menor-100-digital-servicio-estara">Ver el anuncio del gobierno</a>.</p>
+            <p>Más recientemente trabajé en el desarrollo de capacidades, con un diagnóstico de los equipos de servicio para entender en qué punto está cada disciplina y qué perfiles incorporar, y en cómo compra tecnología el Estado.</p>
+            <p>Todo esto sigue en curso. Mi rol es aportar insumos y criterios basados en mi experiencia. Las decisiones corresponden a las contrapartes dominicanas, y el objetivo es dejar capacidades instaladas en lugar de dependencia.</p>
+          </div>
+        </details>
+
+        <details class="case">
+          <summary>
+            <span>
+              <span class="client">Banco Central de la República Argentina</span>
+              <span class="claim">Una nueva arquitectura de información y estrategia de contenidos para un sitio que usan cuatro públicos muy distintos por cuatro razones distintas.</span>
+            </span>
+            <span class="toggle" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M8 1v14M1 8h14" stroke="currentColor" stroke-width="2.2" fill="none"/></svg></span>
+          </summary>
+          <div class="case-body">
+            <p>En 2019 el Banco Central de la República Argentina me convocó para definir la arquitectura de información y la estrategia de contenidos sobre las que hoy está construido <a href="https://www.bcra.gob.ar/">su sitio web</a>. El sitio concentra información que la gente usa para tomar decisiones importantes: tasas, estadísticas, trámites, educación financiera. Estaba organizado en función de la institución y no de quienes lo usan. Un ciudadano que consulta un plazo fijo, un periodista con el cierre encima, una entidad financiera que hace un trámite y un académico que busca series históricas necesitan cosas distintas y recorren el sitio de maneras distintas.</p>
+            <p>Lideré el trabajo junto a un asociado. Hicimos benchmarking de bancos centrales de referencia, entrevistamos a productores de contenido, equipos de sistemas y usuarios finales, e iteramos sobre wireframes hasta que los equipos internos y los proveedores del banco pudieron construir a partir de ellos.</p>
+            <p>La propuesta reorganizó el sitio por audiencias en lugar de por áreas, convirtió al buscador en la vía principal de acceso a los contenidos, dio a la educación financiera un espacio propio en lenguaje claro y reescribió los trámites como acciones: «Pagar una multa financiera» en lugar de «Multas financieras». Cada contenido se pensó en función de cómo alguien lo buscaría.</p>
+            <p>También definimos los tipos de contenido, la estrategia de URL, la taxonomía y los metadatos, mecanismos de opinión ciudadana y un modelo de equipo digital para que la institución pudiera mantener la estrategia vigente después de nuestra salida.</p>
+          </div>
+        </details>
+
+        <details class="case">
+          <summary>
+            <span>
+              <span class="client">Ciudad de Buenos Aires</span>
+              <span class="claim">Un equipo de 30 personas, 200.000 usuarios mensuales y el principal canal público de un gobierno durante una pandemia.</span>
+            </span>
+            <span class="toggle" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M8 1v14M1 8h14" stroke="currentColor" stroke-width="2.2" fill="none"/></svg></span>
+          </summary>
+          <div class="case-body">
+            <p>Como Director de Experiencia Digital lideré un equipo de treinta personas, entre especialistas en UX, diseñadores de contenido y desarrolladores, a cargo de <a href="https://www.buenosaires.gob.ar/">buenosaires.gob.ar</a>, que usaban más de 200.000 personas por mes, y definí los estándares de producto digital que seguía todo el gobierno de la ciudad.</p>
+            <p>A los tres meses llegó la pandemia. El equipo pasó de trabajar en forma presencial a hacerlo en remoto en pocas semanas, y el sitio se convirtió en el canal oficial de la ciudad para las comunicaciones de emergencia y la información sanitaria. Lo mantuvimos funcionando, establecimos nuevas formas de trabajo para un equipo que nunca había trabajado a distancia y, en el mismo período, lanzamos una nueva versión del sitio y su sistema de diseño.</p>
+            <p>Antes, como Gerente de Creatividad y Usabilidad en la oficina de Gobierno Electrónico de la ciudad, lideré la estrategia original de dominio único que unificó cuatrocientos sitios de la ciudad, además del relanzamiento del <a href="https://mapa.buenosaires.gob.ar">Mapa de la Ciudad</a> y de la aplicación <em>Cómo llego</em>.</p>
+          </div>
+        </details>
+
+        <details class="case">
+          <summary>
+            <span>
+              <span class="client">Open Government Partnership</span>
+              <span class="claim">Una revisión del sitio web y sus contenidos que dio forma a su hoja de ruta de desarrollo.</span>
+            </span>
+            <span class="toggle" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M8 1v14M1 8h14" stroke="currentColor" stroke-width="2.2" fill="none"/></svg></span>
+          </summary>
+          <div class="case-body">
+            <p>El sitio web de la <a href="https://www.opengovpartnership.org/" hreflang="en">Open Government Partnership</a> es la vía por la que llega a sus miembros y al público, y había crecido hasta el punto en que la usabilidad, la gestión de contenidos y los procesos del propio equipo se entorpecían entre sí.</p>
+            <p>Evalué el sitio y elaboré un informe con recomendaciones sobre la experiencia de usuario, sobre cómo se gestionan y gobiernan los contenidos web y sobre cómo trabaja el equipo en el día a día.</p>
+            <p>Las recomendaciones se incorporaron a la hoja de ruta de desarrollo de la organización y orientaron su estrategia de contenidos y su forma de operar.</p>
+          </div>
+        </details>
+
+      </div>
+
+      <p class="also"><strong>También:</strong> liderazgo de producto de la aplicación móvil de Shell Energy UK en <a href="https://www.kinandcarta.com/en/" hreflang="en">Kin + Carta</a> (hoy Valtech), con más de 130.000 usuarios mensuales; una hoja de ruta de gobierno digital para Canarias; el mapeo de procesos para la implementación de ERP y CRM en Orilat; un marco de agregación y visualización de datos para CIPPEC; y <a href="https://tamiz.es/">Tamiz</a>, un producto SaaS de contratación pública que llevé de cero al lanzamiento en <a href="https://www.grupoevm.com/">EVM</a>.</p>
+      <p class="also">Mi trayectoria completa está en <a href="https://www.linkedin.com/in/julianrod" onclick="pa.track({name: 'gotoLinkedIn'})">LinkedIn</a>.</p>
+    </section>
+
+    <section aria-labelledby="como-titulo">
+      <h2 id="como-titulo">Cómo trabajo</h2>
+      <div class="principles">
+        <div>
+          <h3>La adopción antes que los entregables</h3>
+          <p>Una estrategia que nadie sigue es sólo un documento. Prefiero dejar un equipo que trabaja de otra manera antes que un informe que se lee bien.</p>
+        </div>
+        <div>
+          <h3>Con el equipo que ya existe</h3>
+          <p>El objetivo es que la organización siga adelante sin mí, y eso implica mentoría y contratación tanto como asesoramiento.</p>
+        </div>
+        <div>
+          <h3>Empezar por servicios y usuarios reales</h3>
+          <p>El punto de partida es lo que un ciudadano o un cliente intenta hacer, antes que el organigrama o la hoja de ruta tecnológica.</p>
+        </div>
+        <div>
+          <h3>Lenguaje claro en todo momento</h3>
+          <p>En los servicios que escribimos para quienes los usan y en las conversaciones sobre qué hacer después.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="contact" aria-labelledby="contacto-titulo">
+      <h2 id="contacto-titulo">Contacto</h2>
+      <p>Acepto proyectos de diagnóstico, programas de transformación y formación de equipos con gobiernos, instituciones públicas y organizaciones privadas. Para conversar sobre un posible proyecto, escríbame con una breve descripción de su organización y de lo que quiere cambiar.</p>
+      <p>Si todavía no sabe si soy la persona indicada, escríbame igual unas líneas sobre su situación. Le diré con honestidad si puedo ayudar y, si no, quién podría hacerlo.</p>
+      <a class="email" href="mailto:julianrod@gmail.com" onclick="pa.track({name: 'email'})">julianrod@gmail.com</a>
+      <ul class="contact-links">
+        <li><a href="https://www.linkedin.com/in/julianrod" onclick="pa.track({name: 'gotoLinkedIn'})">LinkedIn</a></li>
+        <li><a href="Resume-Julian-Rodriguez-Orihuela.pdf" hreflang="en" onclick="pa.track({name: 'downloadResume'})">Descargar CV (PDF, en inglés)</a></li>
+      </ul>
+    </section>
+
+  </main>
 </div>
 
+<footer>
+  <div class="wrap footer-row">
+    <span>Julián Rodríguez Orihuela, Madrid.</span>
+    <span class="footer-links"><a href="#main-es">Volver arriba</a><a href="?lang=en" data-setlang="en" hreflang="en" lang="en">Read in English</a></span>
+  </div>
+</footer>
+</div>
 
-<!--
-        <div class="row">
-
-            <div class="col-sm izquierda">
-
-                <p>I also directed the <a href="https://www.infobae.com/economia/2018/07/31/sistema-nacional-de-turnos-que-tramites-ya-se-pueden-hacer-online-en-la-nueva-plataforma-del-gobierno/">unified appointment system for the attention of citizens in all national offices</a>, I led the implementation of a <a href="https://argob.github.io/poncho/">front-end framework for apps and websites in the public sector</a> and managed the colaboration between our teams and the tax agency for their platforms for <a href="https://www.argentina.gob.ar/noticias/se-presento-el-nuevo-portal-para-monotributistas">small contributors</a> and <a href="https://www.argentina.gob.ar/casasparticulares">housekeepers</a>.</p>
-            </div>
-
-        
-
-        </div>
--->
-
-        <div class="row">
-
-            <div class="col-sm izquierda">
-
-                <p>At the Buenos Aires City Government I was <strong>Creativity and Usability Manager</strong> from 2012 to the end of 2015 at the e-Gov Office, in charge of 6 people in the contet, design and UX teams.</p>
-            </div>
-
-            <div class="col-sm derecha">
-
-                <p>During those years we implemented the <a href="https://www.buenosaires.gob.ar">official website buenosaires.gob.ar</a> unifying 400 websites, we relaunched the <a href="https://mapa.buenosaires.gob.ar">City Map</a> with a new <a href="https://www.buenosaires.gob.ar/aplicacionesmoviles/ba-como-llego">mobile app <em>Cómo llego</em></a>, and we developed other applications and software for different government areas.</p>
-
-            </div>
-
-        </div>
-
-<!--
-        <div class="row">
-
-            <div class="col-sm izquierda">
-
-                <p>Previously at the City Government, between 2010 and 2012 I was one of the co-founders of the <strong>first governemtn office in Latin America dedicated to social media</strong>, in charge of creativity, design, research and training of government areas.</div>
-
-          
-        </div>
--->
-
-        <div id="chau">
-            <p>Thanks for visiting my website.</p>
-            <p>You can download a <a href="Resume-Julian-Rodriguez-Orihuela.pdf" download onclick="pa.track({name: 'downloadResumeEn'})">PDF version of my resume</a> or <a href="https://www.linkedin.com/in/julianrod/" onclick="pa.track({name: 'gotoLinkedInEn'})">visit my LinkedIn profile</a>. You can also contact me directly via email at <strong>julianrod@gmail.com</strong>.</p>
-        </div>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script>
+(function () {
+  var blocks = { en: document.getElementById('lang-en'), es: document.getElementById('lang-es') };
+  var meta = {
+    en: { title: 'Julián Rodríguez Orihuela | Digital transformation for government and public services',
+          desc: 'Julián Rodríguez Orihuela helps governments, public institutions and international organisations redesign their digital services and the operating models behind them.' },
+    es: { title: 'Julián Rodríguez Orihuela | Transformación digital para gobiernos y servicios públicos',
+          desc: 'Julián Rodríguez Orihuela ayuda a gobiernos, instituciones públicas y organismos internacionales a rediseñar sus servicios digitales y los modelos operativos que los sostienen.' }
+  };
+  var descTag = document.querySelector('meta[name="description"]');
+  function setLang(lang, remember) {
+    if (!blocks[lang]) lang = 'en';
+    blocks.en.hidden = lang !== 'en';
+    blocks.es.hidden = lang !== 'es';
+    document.documentElement.lang = lang;
+    document.title = meta[lang].title;
+    if (descTag) descTag.setAttribute('content', meta[lang].desc);
+    if (remember) {
+      try { localStorage.setItem('lang', lang); } catch (e) {}
+      try { history.replaceState(null, '', lang === 'es' ? '?lang=es' : location.pathname); } catch (e) {}
+    }
+  }
+  var fromUrl = null, stored = null;
+  try { fromUrl = new URLSearchParams(location.search).get('lang'); } catch (e) {}
+  try { stored = localStorage.getItem('lang'); } catch (e) {}
+  var browser = (navigator.language || '').toLowerCase().indexOf('es') === 0 ? 'es' : 'en';
+  setLang(fromUrl || stored || browser, false);
+  document.querySelectorAll('[data-setlang]').forEach(function (a) {
+    a.addEventListener('click', function (e) {
+      e.preventDefault();
+      setLang(a.getAttribute('data-setlang'), true);
+      window.scrollTo(0, 0);
+    });
+  });
+})();
+</script>
 </body>
-
 </html>
