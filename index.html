@@ -5,12 +5,60 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Julián Rodríguez Orihuela | Digital transformation for government and public services</title>
 <meta name="description" content="Julián Rodríguez Orihuela helps governments, public institutions and international organisations redesign their digital services and the operating models behind them.">
+<meta property="og:type" content="profile">
+<meta property="og:site_name" content="Julián Rodríguez Orihuela">
 <meta property="og:title" content="Julián Rodríguez Orihuela">
 <meta property="og:description" content="Digital transformation for governments and public institutions.">
-<meta property="og:image" content="https://julianrod.com/img/julian.jpg">
 <meta property="og:url" content="https://julianrod.com/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:image" content="https://julianrod.com/img/share.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Julián Rodríguez Orihuela. Digital transformation for governments and public institutions.">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="alternate" hreflang="en" href="https://julianrod.com/">
 <link rel="alternate" hreflang="es" href="https://julianrod.com/?lang=es">
+<link rel="alternate" hreflang="x-default" href="https://julianrod.com/">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Person",
+ "@id": "https://julianrod.com/#person",
+ "name": "Julián Rodríguez Orihuela",
+ "url": "https://julianrod.com/",
+ "image": "https://julianrod.com/img/julian.jpg",
+ "jobTitle": "Digital transformation consultant",
+ "description": "Independent consultant helping governments, public institutions and international organisations redesign their digital services and the operating models behind them.",
+ "address": {
+  "@type": "PostalAddress",
+  "addressLocality": "Madrid",
+  "addressCountry": "ES"
+ },
+ "knowsLanguage": [
+  "es",
+  "en"
+ ],
+ "knowsAbout": [
+  "Digital transformation",
+  "Digital government",
+  "Public service design",
+  "Digital service standards",
+  "Product management",
+  "Information architecture",
+  "Content strategy",
+  "Team building"
+ ],
+ "alumniOf": {
+  "@type": "CollegeOrUniversity",
+  "name": "Universidad de Palermo"
+ },
+ "sameAs": [
+  "https://www.linkedin.com/in/julianrod"
+ ],
+ "email": "mailto:julianrod@gmail.com"
+}
+</script>
 <link rel="icon" type="image/png" href="favicon.png">
 <link rel="apple-touch-icon" href="favicon.png">
 <link rel="preload" href="fonts/public-sans-latin.woff" as="font" type="font/woff" crossorigin>
@@ -682,6 +730,9 @@ footer { padding: 2.5rem 0 3rem; color: var(--muted); font-size: 0.95rem; }
     blocks.es.hidden = lang !== 'es';
     document.documentElement.lang = lang;
     document.title = meta[lang].title;
+    var canon = document.querySelector('link[rel="canonical"]');
+    if (!canon) { canon = document.createElement('link'); canon.rel = 'canonical'; document.head.appendChild(canon); }
+    canon.href = lang === 'es' ? 'https://julianrod.com/?lang=es' : 'https://julianrod.com/';
     if (descTag) descTag.setAttribute('content', meta[lang].desc);
     if (remember) {
       try { localStorage.setItem('lang', lang); } catch (e) {}
