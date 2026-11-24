@@ -206,8 +206,6 @@ h2 {
 .note { margin: 0; font-size: 1.25rem; }
 
 /* Breadth */
-.breadth p { font-size: clamp(1.2rem, 2vw, 1.4rem); line-height: 1.5; max-width: 40rem; }
-.breadth p:last-child { font-weight: 600; }
 
 /* Clients */
 .clients p { font-size: clamp(1.3rem, 2.4vw, 1.75rem); line-height: 1.4; max-width: 48rem; }
@@ -245,6 +243,7 @@ h2 {
 /* Principles */
 .principles { display: grid; gap: 2.5rem 3.5rem; }
 @media (min-width: 48rem) { .principles { grid-template-columns: 1fr 1fr; } }
+@media (min-width: 64rem) { .principles { grid-template-columns: 1fr 1fr 1fr; } }
 .principles h3 { font-size: 1.35rem; margin: 0 0 0.5rem; font-weight: 800; }
 .principles h3::before {
   content: ""; display: block; width: 2.5rem; height: 4px; background: var(--accent); margin-bottom: 1rem;
@@ -281,8 +280,8 @@ footer { padding: 2.5rem 0 3rem; color: var(--muted); font-size: 0.95rem; }
     <div>
       <h1>Julián Rodríguez Orihuela</h1>
       <p class="positioning">Digital transformation for governments and public institutions</p>
-      <p class="lead">Most digital transformation fails on organisational change rather than technology. My work is getting an institution to work differently, and to keep working differently after I leave.</p>
-      <p>For over a decade I've helped governments, public institutions and international organisations redesign their digital services and the operating models behind them. I've unified more than a thousand government websites in Argentina, set national digital service standards, built product teams from scratch, and mentored the people who have to sustain all of it.</p>
+      <p class="lead">I help public institutions move faster on the digital services they already want to build, and grow the teams that keep improving them.</p>
+      <p>For almost two decades I've worked with governments, public institutions and international organisations on their digital services and the way they are run. I've unified more than a thousand government websites in Argentina, set national digital service standards, built product teams from scratch, and mentored the people who sustain them.</p>
       <p class="based">I'm based in Madrid and work internationally.</p>
       <a class="button" href="#contact">Get in touch</a>
     </div>
@@ -295,7 +294,7 @@ footer { padding: 2.5rem 0 3rem; color: var(--muted); font-size: 0.95rem; }
 
     <section id="services" aria-labelledby="services-title">
       <h2 id="services-title">What I can help with</h2>
-      <p class="intro">Three ways I usually work. Most engagements start with the first.</p>
+      <p class="intro">Three ways I usually work. Most engagements start with the first and continue into the second.</p>
 
       <div class="service">
         <div>
@@ -303,7 +302,7 @@ footer { padding: 2.5rem 0 3rem; color: var(--muted); font-size: 0.95rem; }
           <p class="duration">1 to 6 weeks</p>
         </div>
         <div>
-          <p>An outside read on where you are and what to do first. Digital service reviews, information architecture and content strategy, operating model assessments, prioritised roadmaps. You get a document you can act on, and usually a conversation you have been avoiding.</p>
+          <p>A clear view of where your digital work stands and what to do next. Through interviews, workshops and hands-on review of your services, I look at content, teams and ways of working. The work ends with a presentation to leadership: prioritised next steps, who owns each one, and where to start. It is especially useful when several initiatives are running at once and priorities need sorting out.</p>
           <p class="recent">Recent: an information architecture and content strategy for the Central Bank of Argentina; a website and content review for the Open Government Partnership; a data aggregation framework for CIPPEC; a digital government roadmap for the Canary Islands.</p>
         </div>
       </div>
@@ -314,7 +313,7 @@ footer { padding: 2.5rem 0 3rem; color: var(--muted); font-size: 0.95rem; }
           <p class="duration">3 to 12 months</p>
         </div>
         <div>
-          <p>Working inside the organisation on the change itself: digital service standards, ways of working, product practice, delivery. This is the slow part. Standards only hold if people use them, so most of the time goes on people rather than documents.</p>
+          <p>I stay on to help put those steps into practice, usually a few days a week. I work mostly remotely, with visits on site to see how the teams work day to day. Most of my time goes to the delivery teams: mentoring, running workshops, and doing part of the design, user research or information architecture myself to show what good looks like. I keep leadership close throughout, and once the main pieces are in place we review progress together and agree what comes next.</p>
           <p class="recent">Recent: mentoring and service clinics for the Dominican government's digital transformation programme, through the Public Digital associates network.</p>
         </div>
       </div>
@@ -325,19 +324,12 @@ footer { padding: 2.5rem 0 3rem; color: var(--muted); font-size: 0.95rem; }
           <p class="duration">Flexible, often alongside the above</p>
         </div>
         <div>
-          <p>Designing and staffing the multidisciplinary teams an organisation needs to keep delivering on its own. That covers defining roles and profiles, finding candidates, running interviews and building teams from scratch, then mentoring product and delivery managers so the team holds together long after it is formed. I've built product practices from zero in a national government, a consultancy, and a growing product company.</p>
+          <p>Designing and staffing the multidisciplinary teams an organisation needs to keep delivering on its own. I define roles and profiles, write job adverts, find candidates through my network, run interview panels and support onboarding. Then I help the team settle into ways of working that suit it, set up career paths so people can grow, and mentor product and delivery managers so the team holds together long after it is formed. I've built product practices from zero in a national government, a consultancy and a growing product company.</p>
           <p class="recent">Recent: a capability diagnostic of the service teams in the Dominican Republic to decide what to hire for.</p>
         </div>
       </div>
 
       <p class="note">I work on my own, embedded in your team, or with trusted associates when a project needs a wider set of skills.</p>
-    </section>
-
-    <section class="breadth" aria-labelledby="breadth-title">
-      <h2 id="breadth-title">What the work needs, when it needs it</h2>
-      <p>In one week this job can mean interviewing users, critiquing a design, rewriting a service guide, restructuring a team, and presenting to a minister. Over fifteen years I've worked in most of those seats: digital strategy, user research and interviews, content design and information architecture, UI and design critique, hiring and team building, roadmaps and delivery, communications, and the political conversation that decides whether any of it ships.</p>
-      <p>Most organisations call me when their digital work has become fragmented: too many initiatives, unclear priorities, teams pulling in different directions. I help turn that into a clear strategy, with an agreed view of what matters, in what order, and who needs to do it.</p>
-      <p>You can hire better specialists than me in any one of those crafts. What I bring is the ability to hold the whole shape of a problem, talk credibly with every specialist in the room, and tell you which of them you need. Sometimes that person is not me, and I will say so.</p>
     </section>
 
     <section class="clients" aria-labelledby="clients-title">
@@ -450,16 +442,24 @@ footer { padding: 2.5rem 0 3rem; color: var(--muted); font-size: 0.95rem; }
       <h2 id="how-title">How I work</h2>
       <div class="principles">
         <div>
+          <h3>Start with real services and real users</h3>
+          <p>The starting point is what a citizen or a customer is trying to do, before the org chart or the technology roadmap.</p>
+        </div>
+        <div>
+          <h3>Small steps, shipped often</h3>
+          <p>I work in short cycles: release something small, see how people use it, and improve it. Progress shows early, and each decision rests on what we have learned.</p>
+        </div>
+        <div>
+          <h3>Whatever the work needs</h3>
+          <p>Over the years I've done user research, content design, information architecture, design critique, roadmaps, hiring, workshops and presentations to ministers. I step into whichever of those a project needs at the moment, and bring in specialists when it needs more depth.</p>
+        </div>
+        <div>
           <h3>Adoption over deliverables</h3>
           <p>A strategy nobody follows is a document. I would rather leave a team that works differently than a report that reads well.</p>
         </div>
         <div>
-          <h3>With the team you have</h3>
-          <p>The goal is that the organisation keeps going without me, which means mentoring and hiring as much as advising.</p>
-        </div>
-        <div>
-          <h3>Start with real services and real users</h3>
-          <p>The starting point is what a citizen or a customer is trying to do, before the org chart or the technology roadmap.</p>
+          <h3>Leave capability behind</h3>
+          <p>The goal is that your organisation keeps going without me. That means mentoring and hiring as much as advising, and handing each piece of work to the people who will own it.</p>
         </div>
         <div>
           <h3>Plain language throughout</h3>
@@ -505,8 +505,8 @@ footer { padding: 2.5rem 0 3rem; color: var(--muted); font-size: 0.95rem; }
     <div>
       <h1>Julián Rodríguez Orihuela</h1>
       <p class="positioning">Transformación digital para gobiernos e instituciones públicas</p>
-      <p class="lead">La mayoría de las transformaciones digitales fracasan por el cambio organizacional antes que por la tecnología. Mi trabajo es lograr que una institución trabaje de otra manera, y que lo siga haciendo cuando yo ya no esté.</p>
-      <p>Desde hace más de diez años ayudo a gobiernos, instituciones públicas y organismos internacionales a rediseñar sus servicios digitales y los modelos operativos que los sostienen. Unifiqué más de mil sitios web del gobierno argentino, definí estándares nacionales de servicios digitales, formé equipos de producto desde cero y acompañé como mentor a las personas que sostienen todo eso.</p>
+      <p class="lead">Ayudo a las instituciones públicas a avanzar más rápido en los servicios digitales que ya quieren construir, y a formar los equipos que los siguen mejorando.</p>
+      <p>Desde hace casi dos décadas trabajo con gobiernos, instituciones públicas y organismos internacionales en sus servicios digitales y en la forma en que se gestionan. Unifiqué más de mil sitios web del gobierno argentino, definí estándares nacionales de servicios digitales, formé equipos de producto desde cero y acompañé como mentor a las personas que los sostienen.</p>
       <p class="based">Vivo en Madrid y trabajo en proyectos internacionales.</p>
       <a class="button" href="#contacto">Contactar</a>
     </div>
@@ -519,7 +519,7 @@ footer { padding: 2.5rem 0 3rem; color: var(--muted); font-size: 0.95rem; }
 
     <section id="servicios" aria-labelledby="servicios-titulo">
       <h2 id="servicios-titulo">En qué puedo ayudar</h2>
-      <p class="intro">Estas son las tres formas en que suelo trabajar. La mayoría de los proyectos empiezan por la primera.</p>
+      <p class="intro">Estas son las tres formas en que suelo trabajar. La mayoría de los proyectos empiezan por la primera y continúan con la segunda.</p>
 
       <div class="service">
         <div>
@@ -527,7 +527,7 @@ footer { padding: 2.5rem 0 3rem; color: var(--muted); font-size: 0.95rem; }
           <p class="duration">De 1 a 6 semanas</p>
         </div>
         <div>
-          <p>Una mirada externa sobre dónde está su organización y qué hacer primero. Revisiones de servicios digitales, arquitectura de información y estrategia de contenidos, evaluación de modelos operativos, hojas de ruta priorizadas. El resultado es un documento con el que se puede actuar y que permite iniciar conversaciones pendientes.</p>
+          <p>Una visión clara de en qué punto está su trabajo digital y qué hacer a continuación. A través de entrevistas, talleres y una revisión directa de sus servicios, analizo los contenidos, los equipos y las formas de trabajo. El trabajo termina con una presentación a la dirección: próximos pasos priorizados, quién se hace cargo de cada uno y por dónde empezar. Resulta especialmente útil cuando hay varias iniciativas en marcha al mismo tiempo y hace falta ordenar prioridades.</p>
           <p class="recent">Recientes: arquitectura de información y estrategia de contenidos para el Banco Central de la República Argentina; revisión del sitio web y los contenidos de la Open Government Partnership; un marco de agregación de datos para CIPPEC; una hoja de ruta de gobierno digital para Canarias.</p>
         </div>
       </div>
@@ -538,7 +538,7 @@ footer { padding: 2.5rem 0 3rem; color: var(--muted); font-size: 0.95rem; }
           <p class="duration">De 3 a 12 meses</p>
         </div>
         <div>
-          <p>Trabajo dentro de la organización sobre el cambio en sí: estándares de servicios digitales, formas de trabajo, práctica de producto, entrega. Es la parte lenta. Los estándares sólo se sostienen si la gente los usa, así que la mayor parte del tiempo se dedica a las personas más que a los documentos.</p>
+          <p>Me quedo para ayudar a llevar esos pasos a la práctica, por lo general algunos días por semana. Trabajo sobre todo en remoto, con visitas presenciales para ver cómo trabajan los equipos en el día a día. La mayor parte de mi tiempo la dedico a los equipos de entrega: mentoría, talleres y parte del diseño, la investigación con usuarios o la arquitectura de información, que hago yo mismo para mostrar cómo se ve un buen trabajo. Mantengo a la dirección cerca durante todo el proceso y, cuando las piezas principales están en marcha, revisamos juntos los avances y acordamos los siguientes pasos.</p>
           <p class="recent">Reciente: mentoría y clínicas de servicio para el programa de transformación digital del gobierno dominicano, a través de la red de asociados de Public Digital.</p>
         </div>
       </div>
@@ -549,19 +549,12 @@ footer { padding: 2.5rem 0 3rem; color: var(--muted); font-size: 0.95rem; }
           <p class="duration">Flexible, a menudo junto con lo anterior</p>
         </div>
         <div>
-          <p>Diseño y conformación de los equipos multidisciplinarios que una organización necesita para seguir entregando por su cuenta. Eso incluye definir roles y perfiles, buscar candidatos, hacer entrevistas y armar equipos desde cero, y después acompañar como mentor a product managers y delivery managers para que el equipo se sostenga mucho después de haberse formado. Construí prácticas de producto desde cero en un gobierno nacional, una consultora y una empresa de producto en crecimiento.</p>
+          <p>Diseño y conformación de los equipos multidisciplinarios que una organización necesita para seguir entregando por su cuenta. Defino roles y perfiles, redacto ofertas de empleo, busco candidatos a través de mi red, conduzco entrevistas y acompaño la incorporación. Después ayudo al equipo a adoptar formas de trabajo que le resulten adecuadas, defino trayectorias profesionales para que las personas puedan crecer y acompaño como mentor a product managers y delivery managers para que el equipo se sostenga mucho después de haberse formado. Construí prácticas de producto desde cero en un gobierno nacional, una consultora y una empresa de producto en crecimiento.</p>
           <p class="recent">Reciente: un diagnóstico de capacidades de los equipos de servicio en República Dominicana para definir qué perfiles incorporar.</p>
         </div>
       </div>
 
       <p class="note">Trabajo por mi cuenta, integrado en el equipo de su organización o con asociados de confianza cuando un proyecto necesita un conjunto más amplio de capacidades.</p>
-    </section>
-
-    <section class="breadth" aria-labelledby="amplitud-titulo">
-      <h2 id="amplitud-titulo">Lo que el trabajo necesita, cuando lo necesita</h2>
-      <p>En una misma semana, este trabajo puede implicar entrevistar a usuarios, revisar un diseño, reescribir la guía de un trámite, reorganizar un equipo y presentar ante un ministro. En más de quince años ocupé casi todos esos lugares: estrategia digital, investigación con usuarios, diseño de contenidos y arquitectura de información, diseño de interfaces y revisión de diseño, contratación y formación de equipos, hojas de ruta y entrega, comunicación, y la conversación política que decide si algo de todo eso sale adelante.</p>
-      <p>La mayoría de las organizaciones me llaman cuando su trabajo digital se fragmentó: demasiadas iniciativas, prioridades poco claras, equipos que tiran en direcciones distintas. Ayudo a convertir eso en una estrategia clara, con una visión compartida de qué importa, en qué orden y quién tiene que hacerlo.</p>
-      <p>En cualquiera de esas disciplinas hay especialistas mejores que yo. Lo que aporto es la capacidad de ver el problema completo, hablar con criterio con cada especialista y señalar cuál de ellos hace falta. A veces esa persona no soy yo, y lo digo.</p>
     </section>
 
     <section class="clients" aria-labelledby="clientes-titulo">
@@ -674,16 +667,24 @@ footer { padding: 2.5rem 0 3rem; color: var(--muted); font-size: 0.95rem; }
       <h2 id="como-titulo">Cómo trabajo</h2>
       <div class="principles">
         <div>
+          <h3>Empezar por servicios y usuarios reales</h3>
+          <p>El punto de partida es lo que un ciudadano o un cliente intenta hacer, antes que el organigrama o la hoja de ruta tecnológica.</p>
+        </div>
+        <div>
+          <h3>Pasos cortos, entregas frecuentes</h3>
+          <p>Trabajo en ciclos cortos: lanzar algo pequeño, ver cómo lo usa la gente y mejorarlo. Los avances se ven pronto y cada decisión se apoya en lo que vamos aprendiendo.</p>
+        </div>
+        <div>
+          <h3>Lo que el trabajo necesite</h3>
+          <p>A lo largo de los años hice investigación con usuarios, diseño de contenidos, arquitectura de información, revisión de diseño, hojas de ruta, contratación, talleres y presentaciones ante ministros. Asumo el rol que cada proyecto necesita en cada momento y sumo especialistas cuando hace falta más profundidad.</p>
+        </div>
+        <div>
           <h3>La adopción antes que los entregables</h3>
           <p>Una estrategia que nadie sigue es sólo un documento. Prefiero dejar un equipo que trabaja de otra manera antes que un informe que se lee bien.</p>
         </div>
         <div>
-          <h3>Con el equipo que ya existe</h3>
-          <p>El objetivo es que la organización siga adelante sin mí, y eso implica mentoría y contratación tanto como asesoramiento.</p>
-        </div>
-        <div>
-          <h3>Empezar por servicios y usuarios reales</h3>
-          <p>El punto de partida es lo que un ciudadano o un cliente intenta hacer, antes que el organigrama o la hoja de ruta tecnológica.</p>
+          <h3>Dejar capacidades instaladas</h3>
+          <p>El objetivo es que su organización siga adelante sin mí. Eso implica mentoría y contratación tanto como asesoramiento, y traspasar cada parte del trabajo a las personas que van a hacerse cargo de ella.</p>
         </div>
         <div>
           <h3>Lenguaje claro en todo momento</h3>
